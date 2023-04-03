@@ -1,0 +1,16 @@
+E:\MYITI\OOP\Lap6\Task2\bin\Debug\Task2.exe.config
+E:\MYITI\OOP\Lap6\Task2\bin\Debug\Task2.exe
+E:\MYITI\OOP\Lap6\Task2\bin\Debug\Task2.pdb
+E:\MYITI\OOP\Lap6\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+E:\MYITI\OOP\Lap6\Task2\obj\Debug\Task2.csproj.SuggestedBindingRedirects.cache
+E:\MYITI\OOP\Lap6\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+E:\MYITI\OOP\Lap6\Task2\obj\Debug\Task2.exe
+E:\MYITI\OOP\Lap6\Task2\obj\Debug\Task2.pdb
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\bin\Debug\Task2.exe.config
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\bin\Debug\Task2.exe
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\bin\Debug\Task2.pdb
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\obj\Debug\Task2.csproj.AssemblyReference.cache
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\obj\Debug\Task2.csproj.SuggestedBindingRedirects.cache
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\obj\Debug\Task2.csproj.CoreCompileInputs.cache
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\obj\Debug\Task2.exe
+E:\MYITI\OOP\OOPD6\lab\Lap6\Task2\obj\Debug\Task2.pdb
