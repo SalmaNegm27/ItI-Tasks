@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>task1.1</title>
+    <script>
+        do {
+
+       // var input = '';
+            var input = prompt("Enter array of string");
+            var x = input.split(",").map(function (val) {return parseInt(val)});
+            var result = x.every(function (val) { return !isNaN(val) });
+        } while (!result)
+        var sum = x.reduce(function (p, c) { return p += c });
+        alert(sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

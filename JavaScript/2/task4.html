@@ -1,0 +1,29 @@
+<html>
+<head>
+   <title>task 2</title>
+    <script>
+        function sum() {
+            var x = 0;
+            var y = '';
+            var z=''
+            for (var i = 0; i < arguments.length; i++) {
+                y += arguments[i];
+                if (isFinite(arguments[i]))
+                    x += arguments[i];
+                z = arguments[0] + x;
+            }
+            console.log(x);
+            console.log(y + x);
+            console.log(z);
+
+
+
+            console.log(arguments);
+        }
+        sum("Nasr", 1, 2, 3, 4);
+
+
+
+    </script>
+</head>
+</html>

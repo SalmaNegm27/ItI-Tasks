@@ -1,0 +1,33 @@
+<html>
+<head>
+    <title>Mobile Number</title>
+<script>
+    do {
+        
+        var input = prompt("Enter a valid Name");
+        if ( ! isNaN(input)) 
+            alert("Enter a correct name");
+    } while (!input.trim() || !isNaN(input))
+    do {
+
+        var input = prompt("Enter a valid Number");
+        
+
+    } while (!numbervalidation(input))
+
+    function numbervalidation(x) {
+        var str = "010 011 015 012";
+        if (str.includes(x.substr(0, 3)) && x.length == 11 && x.charAt(3) == "-") {
+
+            return true;
+
+        }
+
+    }
+
+</script>
+</head> 
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let projectId =parseInt(prompt("Enter project ID"));
+        let projectName = prompt("Enter peoject Name");
+        let projectDuration = parseInt(prompt("Enter Duration"));
+
+
+        const obj= {
+            id :[projectId],
+            name:[projectName],
+             duration:[projectDuration],
+             print:function(){console.log(` id = ${this.id} name = ${this.name} , duration = ${this.duration}`)}
+                 
+        }
+        obj.print();
+    
+        function sum() {
+           console.log(arguments);//[10,20] | arrayname[index] || argument[0]
+           for (var i = 0; i < arguments.length; i++) {
+              console.log("arguments[" + i + "]= " + arguments[i]);
+           }
+           console.log(this);
+        }
+            
+
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>6.2</title>
+    <script>
+       
+             var input = '';
+        do {
+
+            var input = prompt("Enter array of string");
+            var x = input.split(",").map(function (val) { return parseInt(val) });
+            var result = x.every(function (val) { return !isNaN(val) });
+        } while (!result);
+        function evennum(val1) {
+            if (val1 % 2 == 0)
+                return true;
+            else false;
+        }
+        function division() {
+            var number = 0;
+           number = parseInt(prompt("Enter a number"));
+            var arr = [];
+            for (var i = 0; i < x.length; i++) {
+                if (x[i] % number == 0) {
+
+                var z = arr.push(i);
+                alert(z);
+            }
+            else 
+                alert("No number perform this opertation");
+
+            }
+            
+           
+        }
+        function getdiscount(num) {
+
+            return (num * 0.3);
+        }
+        
+       
+        var userinput = '';
+        
+        do {
+    
+         userinput = prompt("Select a , b ,c , d,e ,f ,g ,h");
+            switch (userinput) {
+                case 'a':
+                case 'A':
+                    alert(input);
+                    break;
+            
+                case 'b':
+                case 'B':
+                    var sorteorder = x.slice().sort(function (a, b) { return (a - b); });
+                    alert(sorteorder);
+                    break;
+                case 'c':
+                case 'C':
+                    var sorteorder = x.slice().sort(function (a, b) { return (b - a); });
+                    alert(sorteorder);
+                    break;
+
+                case 'd':
+                case 'D':
+                    var reverseorder = x.slice().reverse();
+                    alert(reverseorder);
+                    break;
+                case 'e':
+                case 'E':
+                    var num = x.filter(evennum);
+                    alert(num);
+                    break;
+
+                case 'f':
+                case 'F':
+                    // how to validate
+                    //var y = x.filter(division);
+                    //alert(y);
+                    var y = division();
+                    alert(y);
+
+                    break;
+                case 'g':
+                case 'G':
+                    var dicount = x.map(getdiscount);
+                    alert(dicount);
+                    break;
+                case 'h':
+                case 'H':
+                    var symbol = x.slice().join("***");
+                    alert(symbol);
+                    break;
+           
+            }
+        } while (confirm("do you want reprat"));
+       
+            
+        
+        
+        
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

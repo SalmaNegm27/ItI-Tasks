@@ -1,0 +1,72 @@
+<html>
+<head>
+    <style>
+        table{
+            padding :10px;
+            border : 1px solid black;
+            margin:10px;
+            width:500px;
+            border-collapse:collapse;
+        }
+        tr,td{
+            border:1px solid black;
+            padding:10px;
+        }
+    </style>
+    <script>
+        // first we need to craete row with two ts
+        //1- select table
+        //2- select element inside element
+        //3-create element td
+        //4-set inner text fron input
+        //5-add td inside tr
+        //6-add created row inside table
+          var i = 1;
+        function add() {
+        var selecttable = document.getElementsByTagName('table')[0];
+        var usernum = document.getElementById('usernum');
+           
+
+        var createtr = document.createElement('tr');
+        var tdone = document.createElement('td');
+            tdone.innerText = i;
+            i++;
+        var tdtwo = document.createElement('td');
+            tdtwo.innerText = usernum.value;
+
+            createtr.appendChild(tdone);
+            createtr.appendChild(tdtwo);
+
+           
+            selecttable.appendChild(createtr);
+
+
+        }
+
+        function countrow() {
+            var count = 0;
+            var row = document.getElementsByTagName('tr');
+            for (var i = 0; i < row.length-1; i++) {
+                count++;
+                }
+            
+            //alert("row count" + (i - 1));
+            alert("row count" + i);
+
+        }
+
+    </script>
+
+</head>
+<body>
+    <input type="text" name="add"  id="usernum"/>
+    <input type="button" onclick="add()"  value="Add"/>
+    <table>
+        <tr>
+            <td>No.</td>
+            <td>News</td>
+        </tr>
+    </table>
+    <input type="button" onclick="countrow();" value="countrow"/>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+<head>
+
+</head>
+<body>
+ <script>
+     var openwindow;
+     //var h=-1;
+     function openchildwindowfun() {
+        openwindow= open("task1childwindow.html","", "width=300,height=300");
+        
+        starttimer();
+        
+     }
+         var h = 700;
+
+     function scrollchild() {
+         if (h > 0) {
+             openwindow.scrollBy(0, 100);
+             openwindow.focus();
+             h =h- 100;
+         }
+         else
+            openwindow.close();
+
+     }
+     function starttimer() {
+         t= setInterval('scrollchild()',1500);
+        
+     }
+    
+ </script>
+    <p>Open a child window</p>
+ 
+         <button  onclick ="openchildwindowfun();" > Open a child window </button><br />
+         <!--<button onclick="scrollchild();">scroll</button><br />
+         <button onclick="starttimer();">startimer</button>
+         <button onclick="closewindow();">closewindow</button>-->
+
+</body>
+</html>

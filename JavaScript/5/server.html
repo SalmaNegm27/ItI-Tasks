@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+    h1{
+        align-content:center;
+    }
+
+    p{
+        display :inline;
+    }
+</style>
+</head>
+<body>
+    
+    
+    <script>
+        var x = window.location.href.indexOf('?');
+        var substring = window.location.href.substring(x + 1);
+        var str = substring.split('&');
+        var name = str[0].split('=')[1];
+        var age = str[1].split('=')[1];
+        var gender = str[2].split('=')[1];
+        var color = str[3].split('=')[1];
+
+
+        var expiradate = new Date();
+        expiradate.setFullYear(expiradate.getFullYear() + 1);
+        document.cookie = "username=" + name + ";expiration=expires=Thu, 18 Dec 2023 12:00:00 UTC;"
+        document.cookie = "age=" + age + ";expiration=" + expiradate;
+        document.cookie = "gender=" + gender + ";expiration=" + expiradate;
+        document.cookie = "coloe=" + color + ";expiration=" + expiradate;
+
+
+
+        if (gender == 'female')
+            document.write("<img src=2.png />");
+        else
+            document.write("<img src=1.png />");
+        document.write("<p>  Welcome </p>");
+        document.write("<p style=color:" + color + ">" + name + "<p>");
+
+         
+      
+            
+    </script>
+</body>
+</html>

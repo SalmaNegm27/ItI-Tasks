@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>task 2</title>
+    <script>
+        var check = false
+        check = confirm("do you fly?");
+        switch (check) {
+            case true:
+                check = confirm("Are you Wild");
+                switch (check) {
+                    case true:
+                        document.write("Eagl");
+                        break;
+                    case false:
+                        document.write("Parrot");
+                        break;
+
+                }
+                break;
+            case false:
+                check = confirm("Are you live under sea?");
+                switch (check) {
+                    case true:
+                        check = confirm("Are you a wild?");
+                        switch (check) {
+                            case true:
+                                document.write("Shark");
+                                break;
+                            case false:
+                                document.write("Dolphin");
+                                break;
+                        }
+                        break;
+                    case false:
+                        check = confirm("Are you a wild?");
+                        switch (check) {
+                            case true:
+                                document.write("Lion");
+                                break;
+                            case false:
+                                document.write("Cat");
+                                break;
+                        }
+                        break;
+                       
+                    default:
+                        document.write("And Where am I?");
+
+                }
+        }
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>task 2</title>
+    <script>
+        var array = [];
+        var number = 0;
+        var i = 0;
+        while (array.length < 3) {
+
+        number = parseInt(prompt("enter the number"));
+        if (isNaN(number)) {
+            alert('not a valid number');
+        }
+        else {
+
+            array[i] = number;
+            i++;
+            
+        }
+        }
+       
+        document.write("<h2>Sum of the 3 values " + array[0] + "+" + array[1] + "+" + array[2] + "=" + (array[0] + array[1] + array[2]) + "</h2>");
+        document.write("<h2>Multiplication of the 3 values " + array[0] + "*" + array[1] + "*" + array[2] + "=" + (array[0] * array[1] * array[2]) + "</h2>");
+        if (array[1] == 0 || array[2] == 0)
+            document.write("<h2> cant division by zero</h2>")
+        else
+        document.write("<h2>Division of the 3 values " + array[0] + "/" + array[1] + "/" + array[2] + " = " + (array[0] / array[1] / array[2]) + "</h2>");
+
+       
+
+            
+
+        
+        //for (var i = 0;array.length < 3 ; i++) {
+        //    array[i] = parseInt(prompt('Enter elment'));
+        //    
+        //       
+        //    sum += array[i];
+
+        //    multi *= array[i];
+
+        //    div /= array[i];
+        
+
+        //}
+        //console.log("Sum of the three number " + array[0] + "+" + array[1] + "+" + array[2] + "=" + sum);
+
+        //console.log("Multiplication of the three number " + array[0] + "*" + array[1] + "*" + array[2] + "=" + multi);
+
+        //console.log("Division of the three number " + array[0] + "/" + array[1] + "/" + array[2] + "=" + div);
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
+
+
+

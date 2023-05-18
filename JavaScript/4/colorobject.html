@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head >
+    <title>color</title>
+    <script>
+        var i=10;
+        var color= ["green","blue","red","gray","lightgreen","lightblue"]
+        
+
+        function getRndInteger(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        function display(){
+            
+            document.body.style.backgroundColor = color[getRndInteger(0, color.length - 1)];
+            count();
+        }
+        function count()
+        {
+            if(i>=0)
+            {
+                document.write(i+"<br>");
+                i--;
+               
+            }else
+            close();
+        }
+        function timer(){
+            setInterval("display()",1000);
+        }
+
+    </script>
+</head>
+<body >
+    <script>
+        timer();
+    </script>
+</body>
+</html>

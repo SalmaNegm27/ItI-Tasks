@@ -1,0 +1,17 @@
+<html>
+<head>
+    <title>task 1</title>
+</head>
+<body>
+    <script>
+        var img = ["1.png", "2.jpg", "3.png", "4.png", "6.png"];
+       
+            function getRndInteger(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+        document.body.style.backgroundImage = "url(" + img[getRndInteger(0, img.length-1)] + ")"  ;
+            ;
+    </script>
+
+</body>
+</html>

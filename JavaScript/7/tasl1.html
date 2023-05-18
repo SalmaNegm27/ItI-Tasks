@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         let  arr =  [10,5,9,5,17,90,33,-1,70,88];
+        // arr.sort(function (a,b) {
+        //     return a-b
+        // })
+        // console.log(arr)
+        // using arrow function
+        arr.sort((a,b) => a-b);
+        console.log(arr)
+
+        // let functionToFilterNumbers = function(arr){
+	    // return arr > 50;
+        // }
+        // let filtered = arr.filter(functionToFilterNumbers)
+        //  console.log(filtered)
+
+        let larger = arr.filter((val)=> val >50)
+        console.log(larger)
+       
+       console.log( Math.max(arr)) //NaN
+       console.log( Math.max(...arr)) 
+       console.log( Math.min(...arr)) //NaN
+
+
+        
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

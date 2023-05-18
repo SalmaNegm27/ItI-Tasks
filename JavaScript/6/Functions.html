@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function isvalidnumber(val)
+        {
+            if(val.constructor.name == "Number")
+            return true;
+            else
+            return false;
+        }
+
+        // 1- statement function
+        function sum (x,y)
+        {
+            if (isvalidnumber(x) && isvalidnumber(y))
+            return x+y;
+            // else
+            // return 0;
+        }
+        //function call
+        var a = parseInt(prompt("first numbaer"));
+        var b = parseInt(prompt("second numbaer"));
+       console.log(sum(a,b));
+       console.log(isvalidnumber(25))
+       
+       function div()
+       {
+     
+        var sum = 0;
+        for(var i=0;i<arguments.length ; i++)
+        {
+            sum +=arguments[i]
+        }
+        return sum 
+        
+       }
+
+     console.log(div(2,15));  
+       // 2-function expression the name is optional 
+       var expressfun = function (a,b){
+            return a+b
+       }
+
+       console.log(expressfun(4,1));
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
