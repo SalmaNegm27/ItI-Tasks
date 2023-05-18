@@ -1,0 +1,109 @@
+﻿
+<html>
+<head>
+    
+    <style>
+        body {
+            
+        }
+
+        form {
+            border: 0px solid #f1f1f1;
+        }
+
+        input[type=text], input[type=password] {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+           
+            border: 1px solid #ccc;
+            align-content:center;
+        }
+
+        button {
+            background-color:blue;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+        }
+
+            button:hover {
+                opacity: 0.8;
+            }
+
+        .dot {
+            height: 20px;
+            width: 20px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 10px;
+            margin-right: 50%;
+            margin-top:20px;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 24px 0 12px 0;
+            height:20px
+        }
+
+        img.login {
+            width: 40%;
+           padding-right:50%;
+            
+        }
+
+        .container {
+            padding: 16px;
+        }
+       
+
+        
+           
+
+        
+    </style>
+</head>
+<body>
+
+    <form action="server.gtml" method="get">
+        <div class="imgcontainer">
+            <img class="login" src="20.png" alt="login" >
+        </div>
+        <div style="text-align:center">
+            <span class="dot">Or</span>
+        </div>
+        <div class="container">
+            
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <br />
+                        <label>
+                            <input type="checkbox" name="remember"> Keep me Signed in
+                        </label>
+                        <label style="padding:50px;align-content:flex-end" >
+                            Forget Your Password?
+                    
+                    </label>
+                    
+
+            
+            
+            <button type="submit" style="background-color: #4267b2">Login</button>
+        </div>
+
+        <div class="container">
+
+            <span >Not A Member</span>
+            <span style="color:#66CC66">Sign Up Now!</span>
+        </div>
+    </form>
+
+</body>
+</html>
+
