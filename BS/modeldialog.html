@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <script>
+        window.addEventListener('load', function () {
+            document.querySelector("#inputform").addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const username = document.querySelector("#inputtext").value;
+                const password = document.querySelector("#inputPassword").value;
+                document.querySelector("#container").innerHTML = `UserName:${username} , Password is ${password}`;
+                $('#modal').modal('hide');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="d-flex justify-content-center mt-5">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#modal">Login</button>
+        </div>
+        <div>
+            <form id="inputform">
+                <div class="modal" id="modal">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">
+                                    <span>&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <label for="inputtext" class="form-label">User Name</label>
+                                    </div>
+                                    <div>
+                                        <input type="text" id="inputtext" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-auto">
+                                        <label for="inputPassword" class="form-label">Password</label>
+                                    </div>
+                                    <div class="col-auto">
+                                        <input type="password" id="inputPassword" class="form-control">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-primary" type="submit" id="login">Login</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div id="container"></div>
+    </div>
+
+
+    <script src="js/JQuery-3.3.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>

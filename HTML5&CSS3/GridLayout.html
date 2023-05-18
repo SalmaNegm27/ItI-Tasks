@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing:border-box;
+        }
+        
+        
+        /* section{
+            border:2px solid black;
+            padding: 10px;
+            margin: 10px;
+        } */
+        #mainwrapper{
+            border: 1px solid black;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            
+            
+            /* grid-template-rows: repeat(6,1fr);
+            grid-template-columns:repeat((6,1fr)); */
+            
+            grid-template-areas: "maincolum mainnav "
+            "maincolum sectionone  "
+            "maincolum sectiontwo  "
+            "maincolum sectionthree "
+            ;
+            grid-template-rows: 0.2fr 0.3fr 0.3fr 1fr;
+            grid-template-columns:  0.5fr 2fr;
+            
+        }
+        img{
+            object-fit: cover;
+            width: 350px;
+            height: 300px;
+            /* width: 380px;
+            height: 260px; */
+        }
+
+        a{
+            text-decoration: none;
+            
+        }
+        #maincolum{
+            grid-area:maincolum;
+            
+        }
+        #mainnav{
+            
+            grid-area:mainnav;
+            background-color: rgb(100, 150, 243);
+            display: flex;
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+            gap: 2px;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            
+        }
+        #sectionone{
+            margin: 10px outo;
+            grid-area:sectionone;
+            display:grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+            
+        }
+        #sectiontwo{
+            display: grid;
+            grid-area:sectiontwo;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+
+        }
+        #sectionthree{
+            grid-area:sectionthree;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+             gap: 10px;
+
+        }
+        /* @media (max-width: 768px) {
+        #mainwrapper {
+            grid-template-areas: "mainnav"
+                "sectionone"
+                "sectiontwo"
+                "sectionthree"
+                "maincolum";
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+        }
+    } */
+        #sectionone, #sectiontwo, #sectionthree {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+
+    </style>
+</head>
+<body>
+    <div id="mainwrapper">
+        <section id="maincolum"></section>
+        <nav id="mainnav">
+            <a href="#" > All</a>
+            <a href="#" > illustrution</a>
+            <a href="#" > Motion</a>
+            <a href="#" > Photography</a>
+            <a href="#" > Print</a>
+        </nav>
+        <section id="sectionone">
+            <img src="UP/1.jpg">
+            <img src="UP/2.jpg">
+            <img src="UP/3.jpg">
+            <img src="UP/4.jpg">
+        </section>
+       
+        <section id="sectiontwo">
+            <img src="UP/6.jpg">
+            <img src="UP/7.jpg">
+            <img src="UP/8.jpg">
+            <img src="UP/9.jpg">
+        </section>
+
+        <section id="sectionthree">
+            <img src="UP/10.jpg">
+            <img src="UP/11.jpg">
+            <img src="UP/12.jpg">
+            <img src="UP/13.jpg">
+        </section>
+
+       
+     
+        
+
+    </div>
+</body>
+</html>

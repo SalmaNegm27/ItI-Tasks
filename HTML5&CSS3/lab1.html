@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        #mainwrapper{
+           
+            border: 4px solid rgb(159, 30, 30);
+            width: 80vw;
+            height: 70vh;
+            box-shadow: 20px 10px 10px blueviolet;
+            border-radius: 20px;
+            padding:5px;
+            margin: 60px 60px;
+            background-image: radial-gradient( rgb(255, 255, 255)  , rgb(253, 231, 242)  , #b081a4 );
+            transition-duration:2s;
+            display: flex;
+            justify-content:space-around;
+
+        }
+        #mainwrapper:hover
+        {
+            transform: skew(10deg);
+        }
+        #mainwrapper:active
+        {
+            transform :scale(0.2)
+        }
+       
+        #sectionone{
+            width:30%;
+           height: 90%;
+            border:2px solid rgb(0, 0, 0);
+            background-image: radial-gradient( rgb(255, 255, 255)  , rgb(218, 218, 218)  , #d8a8cc );
+            /* float: left; */
+            border-radius: 20px;
+            padding: 5px;
+            margin: 5px;
+            column-count:3;
+            column-rule: 2px solid red;
+            column-gap:100px;
+            overflow: scroll hidden ; 
+        } 
+       
+        #sectiontwo{
+            
+            width: 50%;
+           height: 90%;
+
+           padding: 5px;
+            margin: 5px;
+            border: 2px solid rgb(87, 91, 190);
+            background-image: radial-gradient( rgb(255, 255, 255)  , rgb(218, 218, 218)  , #d8a8cc );
+            border-radius: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            /* display: flex; */
+            /* flex-direction: column; */
+            /* justify-content: space-between;
+            align-items: self-start; */
+
+            /* float: right; */
+            overflow: hidden scroll ; 
+            
+           
+
+        } 
+        img {
+            width: 100px;
+            height: 100px;
+            margin: 8px;
+            border: 2px solid rgb(29, 144, 103);
+            box-shadow: 5px 2px 2px rgb(18, 128, 118);
+            transition-duration: 2s;
+            /* display: flex; */
+            /* flex-direction: row;
+            justify-content: space-between; */
+            
+         }
+        img:hover{
+            transform :scale(1.5)
+        }
+        img:active{
+            transform :scale(2.7)
+        } 
+        
+        mark:active
+        {
+            background-color: red ;
+        }
+        mark:hover
+        {
+            background-color: rgb(30, 64, 138) ;
+        }
+        
+        @media all and (orientation:portrait) {
+           
+          img{  
+            
+                transform:rotate(45deg);
+            }
+            img:hover
+            {
+                transform: scale(0.6);
+            }
+            img:active
+            {
+                border: 3px darkcyan dashed;
+
+            }
+            #sectionone{
+                column-rule:none;
+            }
+            mark{
+                background-color: rgb(170, 15, 90);
+            }
+            #mainwrapper:hover{
+                transform: skew(none);
+
+            }  
+        }
+
+       
+
+
+        
+    </style>
+</head>
+<body>
+  <div id="mainwrapper">
+        <section id="sectionone">
+           <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam amet laborum, at autem temporibus deleniti, laudantium voluptas aspernatur architecto illumexplicabo<mark> eum consectetur est obcaecati? Provident omnis dolores animi.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam amet laborum, at </mark>autem temporibus deleniti, laudantium voluptas aspernatur architecto illum explicabo eum consectetur est obcaecati? Provident omnis dolores animi.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam amet laborum, at autem temporibus deleniti, laudantium voluptas aspernatur architecto illum explicabo eum consectetur est obcaecati? Provident omnis dolores animi.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora ullam amet laborum, at autem temporibus deleniti, laudantium voluptas aspernatur architecto illum explicabo eum consectetur est obcaecati? Provident omnis dolores animi.</p>
+        </section>  
+         <section id="sectiontwo">
+            <img src="UP/1.jpg" />
+            <img src="UP/2.jpg" />
+            <img src="UP/3.jpg" />
+            <img src="UP/4.jpg" />
+            <img src="UP/5.jpg" />
+            <img src="UP/6.jpg" />
+            <img src="UP/7.jpg" />
+            <img src="UP/8.jpg" />
+            <img src="UP/9.jpg" />
+            <img src="UP/10.jpg" />
+            <img src="UP/11.jpg" />
+            <img src="UP/12.jpg" />
+            <img src="UP/13.jpg" />
+            <img src="UP/1.jpg" />
+            <img src="UP/2.jpg" />
+            <img src="UP/3.jpg" />
+            <img src="UP/4.jpg" />
+            <img src="UP/5.jpg" />
+            <img src="UP/1.jpg" />
+            <img src="UP/2.jpg" />
+            <img src="UP/3.jpg" />
+            <img src="UP/4.jpg" />
+            <img src="UP/5.jpg" />
+            <img src="UP/6.jpg" />
+            <img src="UP/7.jpg" />
+            <img src="UP/8.jpg" />
+            <img src="UP/9.jpg" />
+            <img src="UP/10.jpg" />
+            <img src="UP/11.jpg" />
+            <img src="UP/12.jpg" />
+            <img src="UP/13.jpg" />
+            <img src="UP/1.jpg" />
+            <img src="UP/2.jpg" />
+            <img src="UP/3.jpg" />
+            <img src="UP/4.jpg" />
+            <img src="UP/5.jpg" />
+
+        </section> 
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+const submission = document.querySelector('button[type="submit"]');
+submission.addEventListener('click', function (event) {
+
+    event.preventDefault();
+
+
+    login();
+}) //end of eventlistner
+
+
+
+function login() {
+
+    const enteredUserName = document.getElementById('username').value.trim();
+    const enteredPassword = document.getElementById('password').value.trim();
+
+    if (enteredUserName === "admin@admin.com" && enteredPassword === "admin123") {
+        window.location.href = 'blank.html';
+    }
+    else {
+
+        const user = getUser(enteredUserName, enteredPassword);
+        if (user) {
+
+            const sessionobj = JSON.stringify(user);
+            sessionStorage.setItem('myObjectKey', sessionobj);
+            window.location.href = "index.html";
+        } else {
+
+            alert('Invalid username or password');
+        }
+
+    }
+
+}
+
+function getUser(username, password) {
+    const usersarr = JSON.parse(localStorage.getItem('myArray'));
+
+    for (let i = 0; i < usersarr.length; i++) {
+        if (usersarr[i].username === username && usersarr[i].password === password) {
+            return usersarr[i];
+        }
+    }
+    return false;
+
+}
+
+function setAdmin() {
+    localStorage.setItem('adminEmail', 'admin@admin.com');
+    localStorage.setItem('adminPassword', 'admin123');
+}
+

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    window.addEventListener('load',function() {
+        document.querySelector("#start").addEventListener('click',function(){
+            document.querySelector("#mainsection").style.animationPlayState = 'running';
+            document.querySelector("#mainsection").style.animation="normal 2s infinite sectionanimation";
+        });//end of start event
+
+        document.querySelector("#pause").addEventListener('click',function(){
+            document.querySelector("#mainsection").style.animationPlayState = 'paused';
+        });//end of pause event
+
+        document.querySelector("#stop").addEventListener('click',function(){
+            document.querySelector("#mainsection").style.animation= 'none';
+            document.querySelector("#mainsection").offsetWidth;
+        });//end of stop event
+        
+    });//end of load
+</script>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    #mainwrapper{
+        
+        width: 1000px;
+        height: 600px;
+        padding:5px;
+        margin: 60px auto;
+        position: relative;
+
+    }
+    #mainnav{
+        margin: 20px 230px;
+    }
+    input[type="button"]{
+        border: 1px solid rgb(71, 175, 213);
+        padding: 5px 5px;
+        margin: 20px 20px;
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        background-color: cadetblue;
+    }
+    #mainsection{
+        padding: 5px;
+        margin: 40px;
+        width: 70px;
+        height: 70px;
+        border: 1px solid black;
+        background-color: rgb(151, 91, 97);
+        animation: normal 2s infinite sectionanimation;
+        animation-duration: 2s;
+        animation-iteration-count:infinite;
+        animation-direction:normal;
+        position: absolute;
+    }
+    @keyframes sectionanimation {
+       0%{
+        left:100px;
+        top:50px;
+        
+
+       }
+       25%{
+        left:500px;
+        top: 50px;
+        background-color:royalblue ;
+
+       }
+       50%{
+        left: 500px;
+        top: 500px;
+        background-color: blueviolet;
+
+       }
+       75%{
+        left: 100px;
+        top: 500px;
+        background-color: chartreuse;
+       }
+       100%{
+        left:100px;
+        top:50px;
+        
+       }
+    }
+
+</style>
+<body>
+    <div id="mainwrapper">
+        <nav id="mainnav">
+            <input id="start" type="button" value="Start">
+            <input id="pause" type="button" value="Pause">
+            <input id="stop" type="button" value="Stop">
+         </nav>
+         <section id="mainsection">
+
+         </section>
+    </div>
+</body>
+</html>

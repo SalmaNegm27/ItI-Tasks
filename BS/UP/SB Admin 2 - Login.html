@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5501/success.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Login</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="./SB Admin 2 - Login_files/all.min.css" rel="stylesheet" type="text/css">
+  <link href="./SB Admin 2 - Login_files/css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="./SB Admin 2 - Login_files/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body class="bg-gradient-primary">
+  <div class="container d-flex ">
+    <div class="alert alert-success w-100 h-50" role="alert">
+      <div class="alert alert-success d-flex align-items-center" role="alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+          <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+        </svg>
+        <div class="m-2">
+          Mail Sent Successfully
+        </div>
+      </div>
+      <p id="p1" class="text-capitalize fw-bold">Your username and password have been sent to your email... Please check
+        your inbox.</p>
+      <hr>
+      <p class="mb-0 text-capitalize fw-bolder"><a href="http://127.0.0.1:5501/login.html" class="alert-link">login</a> now.</p>
+    </div>
+  </div>
+  <script src="./SB Admin 2 - Login_files/jquery.min.js.download"></script>
+  <script src="./SB Admin 2 - Login_files/bootstrap.bundle.min.js.download"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="./SB Admin 2 - Login_files/jquery.easing.min.js.download"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="./SB Admin 2 - Login_files/sb-admin-2.min.js.download"></script>
+  <script src="./SB Admin 2 - Login_files/login.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body></html>
