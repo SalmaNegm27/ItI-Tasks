@@ -1,0 +1,15 @@
+img
+{
+
+    height:70vh;
+    object-fit: cover;
+   
+}
+h3{
+ padding: 20px;
+ margin: 20px;
+ text-align: center;
+ color: cadetblue;
+ background-color:aliceblue;
+
+}

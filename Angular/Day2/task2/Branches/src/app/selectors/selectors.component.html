@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <div class="form-group">
+        <select  class="form-select form-control-sm" [(ngModel)]="selectedTrack" (change)="updateNewList()">
+          <option value="">Open this select menu</option>
+          <option  value="donet">Dot Net</option>
+          <option value="os">OS</option>
+          <option value="pd">PD</option>
+          <option value="motion">Motion</option>
+          <option value="meanstack">Mean Stack</option>
+          <option value="mearn">Mearn</option>
+          <option value="frontend">Front End</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 offset-sm-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-header">
+          Available Branches
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" *ngFor="let branch of branches">{{ branches }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div *ngIf="newList.length > 0" class="container">
+  <h3 class="card-header">Branches</h3>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item" *ngFor="let item of newList">{{ item }}</li>
+  </ul>
+</div>

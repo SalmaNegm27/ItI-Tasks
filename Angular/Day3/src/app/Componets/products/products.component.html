@@ -1,0 +1,15 @@
+
+ <div class="card-container">
+  <div class="card m-3" style="width: 18rem;" *ngFor="let product of products">
+    <img src="assets/{{product.imgUrl}}" class="card-img card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title"> Id :{{product.id}}</h5>
+      <h5 class="card-title"> Product Name :{{product.productName}}</h5>
+      <h5 class="card-title"> Price :{{product.price}}</h5>
+      <h5 class="card-title"> Quentaity : {{product.quantity}}</h5>
+      <i class="bi bi-eye m-4"></i>
+      <i class="bi bi-pencil m-4"></i>
+      <i class="bi bi-trash3 m-4"></i>
+    </div>
+  </div>
+ </div>

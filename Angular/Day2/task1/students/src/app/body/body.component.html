@@ -1,0 +1,28 @@
+<section style="display: flex; flex-direction: column; align-items: center;">
+    <input type="text" class="form-control" value="" placeholder="Enter Student Name" [(ngModel)]="studentname"
+        required />
+    <div *ngIf="!isStudentAgeValid()" class="text-danger">
+        Student Age should be greater than 18.
+    </div>
+    <input type="number" class="form-control" value="" placeholder="Enter Student Age" [(ngModel)]="studentage" />
+    <div *ngIf="!isStudentNameValid()" class="text-danger">
+        Student Name Required.
+    </div>
+
+
+    <button (click)="add()" type="button" class="btn btn-success">Add</button>
+</section>
+<table class="table">
+    <tbody>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr>
+        <tr *ngFor="let student of studentlist ; let i = index">
+            <td>{{i}}</td>
+            <td>{{student.studentname}}</td>
+            <td>{{student.studentage}}</td>
+        </tr>
+    </tbody>
+</table>
