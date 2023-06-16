@@ -1,0 +1,13 @@
+.footer {
+    background-color:rgb(147, 141, 141);
+    padding: 20px 0;
+  }
+
+  .footer h4 {
+    margin-bottom: 20px;
+  }
+
+  .footer p {
+    text-align: center;
+    color: white;
+  }

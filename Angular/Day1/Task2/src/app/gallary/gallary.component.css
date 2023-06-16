@@ -1,0 +1,10 @@
+.gallery-item {
+    padding:20px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+  }
+  
+  .gallery-item:hover {
+    transform: scale(1.1);
+  }
