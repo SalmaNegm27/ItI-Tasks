@@ -1,0 +1,54 @@
+<div class="container">
+  <div class="card">
+    <div class="card-body">
+      <form  [formGroup]="loginForm"  class="container" (submit)="formOperation($event)">
+        <div class="form-group">
+          <label for="inputUser" class="form-label">UserName:</label>
+          <input type="text" id="inputUser" class="form-control" formControlName="userInput">
+        </div>
+          <ng-container *ngIf="getUserName.touched">
+            <div
+              *ngIf="getUserName.hasError('required')"
+              id="emailHelp"
+              class="form-text text-danger"
+            >
+              UserName is Required
+            </div>
+            <div
+              *ngIf="getUserName.hasError('minlength')"
+              id="emailHelp"
+              class="form-text text-danger"
+            >
+              UserName length must be greater than 3
+            </div>
+          </ng-container>
+        
+        <div class="form-group">
+          <label for="inputPassword5" class="form-label">Password:</label>
+          <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" formControlName="userPassword">
+        </div>
+          <ng-container  *ngIf="getUserPassword.touched">
+            <div
+              *ngIf="getUserPassword.hasError('required')"
+              id="emailHelp"
+              class="form-text text-danger"
+            >
+              Password Name is Required
+            </div>
+            <div
+              *ngIf="getUserPassword.hasError('pattern')"
+              id="emailHelp"
+              class="form-text text-danger"
+            >
+             Password Must Contain A-Z and symbols
+            </div>
+          </ng-container>
+        
+       
+        <button type="submit" class="btn mt-3">
+         Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

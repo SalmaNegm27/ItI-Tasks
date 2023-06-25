@@ -1,0 +1,23 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-img {
+    width: 60cw;
+    height: 60vh; 
+    object-fit: cover; 
+  }
+
+  h5
+  {
+    padding: 10px;
+    background-color: rgb(239, 239, 184);;
+    color: rgb(58, 62, 63);
+
+  }
+  i{
+    color: rgb(52, 65, 65);
+  }
+  

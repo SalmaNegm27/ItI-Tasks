@@ -1,0 +1,39 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Blue Bag",
+      "imgUrl": "1.jpeg",
+      "price": "400",
+      "quantity": "20"
+    },
+    {
+      "productName": "HMBag",
+      "price": 40,
+      "imgUrl": "2.jpeg",
+      "quantity": 80,
+      "id": "2"
+    },
+    {
+      "id": "3",
+      "productName": "Fancy Bag",
+      "imgUrl": "3.jpeg",
+      "price": "400",
+      "quantity": "5"
+    },
+    {
+      "productName": "Watch",
+      "imgUrl": "4.jpeg",
+      "price": "40",
+      "quantity": 11,
+      "id": "4"
+    },
+    {
+      "productName": "Blue Bag",
+      "price": 5000,
+      "quantity": 12,
+      "imgUrl": "6.jpg",
+      "id": "AzRvY2J"
+    }
+  ]
+}

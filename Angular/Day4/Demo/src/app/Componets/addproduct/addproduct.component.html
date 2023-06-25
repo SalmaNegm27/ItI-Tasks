@@ -1,0 +1,60 @@
+<div class="container">
+  <form [formGroup]="productForm" (submit)="formOperation($event)">
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Product Name :</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="ProductName"
+        formControlName="productName">
+
+      <ng-container *ngIf="getProductName.touched">
+        <div *ngIf="getProductName.hasError('required')" id="emailHelp" class="form-text text-danger">
+          Product Name is Required
+        </div>
+        <div *ngIf="getProductName.hasError('minlength')" id="emailHelp" class="form-text text-danger">
+          Product Name length must be greater than 3
+        </div>
+      </ng-container>
+    </div>
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Price :</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Price"
+        formControlName="price">
+      <ng-container *ngIf="getProductPrice.touched">
+        <div *ngIf="getProductPrice.hasError('required')" id="emailHelp" class="form-text text-danger">
+          Product Price is Required
+        </div>
+        <div *ngIf="getProductPrice.hasError('max')" id="emailHelp" class="form-text text-danger">
+          Maximun Price is 10000
+        </div>
+      </ng-container>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Quantity :</label>
+      <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Quentaity"
+        formControlName="quantity">
+      <ng-container *ngIf="getProductPrice.touched">
+        <div *ngIf="getQuantity.hasError('required')" id="emailHelp" class="form-text text-danger">
+          Quantity is Required
+        </div>
+        <div *ngIf="getQuantity.hasError('max')" id="emailHelp" class="form-text text-danger">
+          Maximun Quantity is 100
+        </div>
+        <div *ngIf="getQuantity.hasError('min')" id="emailHelp" class="form-text text-danger">
+          Minimun Quantity is 10
+        </div>
+      </ng-container>
+    </div>
+    <div class="mb-3">
+     
+      <label for="exampleFormControlInput1" class="form-label">Image Path</label>
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Image Path" formControlName="imgUrl">
+    
+    </div>
+    
+    <div style="display: flex; justify-content: center;">
+      <button type="submit" class="btn mt-3">{{ productId == 0 ? "Add Product":"Edit Product" }}</button>
+    </div>
+
+  </form>
+</div>

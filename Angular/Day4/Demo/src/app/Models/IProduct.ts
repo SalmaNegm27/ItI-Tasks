@@ -1,0 +1,8 @@
+export interface IProduct
+{
+    id : number;
+    imgUrl : string;
+    productName : string;
+    quantity : number;
+    price : number
+}
